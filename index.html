@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8" />
     <meta name="description" content="This is the portfolio website of Ties Naber, Gameplay programmer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="TwareStylesheet.css" />
 
@@ -23,12 +23,13 @@
                 </ul>
             </nav>
 
+            <header>
+                <h1>Ties Naber</h1>
+                <h2>Gameplay Programmer</h2>
+            </header>
             <!-- Top Container -->
             <section class="top-container">
-                    <header>
-                        <h1>Ties Naber</h1>
-                        <h2>Gameplay Programmer</h2>
-                    </header>
+            
                     <!-- Project showcase -->
                       <div class="top-box top-box-a">
                           <h3>Project One</h3>
@@ -57,22 +58,31 @@
             </section>
 
             <!-- Resume Section -->
-            <section class="resume">
-                <div class="about">
+            <div id=resume>
+            <section id="resume">
+                <aside id=bio>
+                    <div class="about">
                         <h3>About</h3>
-                    <div id="potrait">
-                        <img src="img/resume/ties.jpg" alt="picture of Ties Naber">
+                        <div id="potrait">
+                            <img src="img/resume/ties.jpg" alt="picture of Ties Naber">
+                        </div>
+                        <div id=summary>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias doloribus repellendus perferendis et vero. Ad sed maiores consequatur laboriosam nemo sequi, rerum consectetur animi, quidem nesciunt praesentium temporibus eligendi, quod maxime debitis ducimus? Iusto distinctio blanditiis velit, minus provident hic.</p>
+                        </div>                 
                     </div>
-                   
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, odit.</p>
-                </div>
+                
                 <div id="pdf">
-                    <h4>Resume PDF</h4>
-                    <div></div>
-                    <a href="resume_folder/ResumeTiesNaber.pdf" id="pdfContainer" title="Resume Ties Naber" target="_blank">Resume</a>   
+                    <a href="resume_folder/ResumeTiesNaber.pdf" id="pdfContainer" title="Resume Ties Naber" target="_blank">
+                        <article id=pdfBg style="background-image: url(img/resume/cv.jpg)">
+                            <div class="description">
+                                <h4>PDF Resume</h4>
+                            </div>
+                        </article>
+                    </a> 
                 </div>
-                <div class="languages">
-                    <h4>Programming Languages</h4>
+            </aside>
+                <div id="languages" class="resBox">
+                    <h2>Programming Languages</h2>
                     <hr/>
                     <h5><span>General</span></h5>
                     <table class="imgT">
@@ -102,15 +112,19 @@
                 <hr/>
                 <hr/>
 
-                <div>
-                    <h3>Experience</h3>
-                    <h5><a href=http://freakoutgames.com>Freakout Games</a></h5>
-                    <ul>
-                        <li>Work on an unannounced project as programmer using Unity3D</li>
-                        <li>Focus on gameplay, level generation and user experience</li>
-                    </ul>
-                </div>
-                <div>
+                    <div class="resV">
+                        <div id=experience class=resBox>
+                        <h2>Experience</h2>
+                        <h5><a href=http://freakoutgames.com>Freakout Games</a></h5>
+                            <ul>
+                                <li>Work on an unannounced project as programmer using Unity3D</li>
+                                <li>Focus on gameplay, level generation and user experience</li>
+                            </ul>
+                         </div>
+                    </div>
+                
+                <div class=resV>
+                    <div id=education class="resBox">
                     <h3>Education</h3>
                     <h5>Hanze University of Applied Sciences</h5>
                     <ul>
@@ -143,8 +157,9 @@
                     </ul>
                     <hr/>
                 </div>
+            </div>
 
-                <div>
+                <div id=gameDev class="resBox">
                     <h3>Game Engines</h3>
                     <table class="imgT">
                         <tr>
@@ -154,7 +169,7 @@
                     </table>
                 </div>
 
-                <div>
+                <div id=languages class="resBox">
                     <h3>Software</h3>
                     <table class="imgT">
                         <tr>
@@ -168,7 +183,7 @@
                     </table>
                 </div>
             </section>
-
+            </div>
                 <h2>Contact</h2>
                 <h3>Add all contact possibilities here</h3>
                 <h3> include, linkedIn, Github, Youtube</h3>
